@@ -12,7 +12,7 @@ React Native provides a suite of components for presenting lists of data. Genera
 
 The `FlatList` component displays a scrolling list of changing, but similarly structured, data. `FlatList` works well for long lists of data, where the number of items might change over time. Unlike the more generic [`ScrollView`](docs/using-a-scrollview.html), the `FlatList` only renders elements that are currently showing on the screen, not all the elements at once.
 
-The `FlatList` component requires two props: `data` and `renderItem`. `data` is the source of information for the list. `renderItem` takes one item from the source and returns a formatted component to render.
+The `FlatList` component requires two props: `data` and `renderItem`. `data` is the source of information for the list. `renderItem` takes a function that gets passed an item from `data` and returns a formatted component to render.
 
 This example creates a simple `FlatList` of hardcoded data. Each item in the `data` props is rendered as a `Text` component. The `FlatListBasics` component then renders the `FlatList` and all `Text` components.
 
